@@ -13,7 +13,7 @@
     "ganache": "^6.4.5",
     "mocha": "^10.8.2",
     "node.js": "^0.0.1-security",
-    "solc": "^0.8.30",
+    "solc": "^0.4.17",
     "web3": "^1.10.0"
   },
   "devDependencies": {
