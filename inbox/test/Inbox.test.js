@@ -3,15 +3,10 @@ const ganache = require('ganache-cli');
 const Web3 = require('web3'); 
 const web3 = new Web3(ganache.provider());
 
-const compiled = require('../compile');
-const inboxContract = compiled[':Inbox'];
-
-const abi = JSON.parse(inboxContract.interface);
-const bytecode = inboxContract.bytecode;
+const { abi, bytecode } = require('../compile');
 
 let accounts;
 let inbox;
-
 
 beforeEach(async () => {
   accounts = await web3.eth.getAccounts();
